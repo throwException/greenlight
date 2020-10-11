@@ -59,6 +59,9 @@
               <%= f.password_field :password_confirmation, class: "form-control #{form_is_invalid?(@user, :password_confirmation)}", placeholder: t("signup.password_confirm") %>
               <div class="invalid-feedback d-block"><%= @user.errors.full_messages_for(:password_confirmation).first %></div>
             </div>
+            <div class="form-group">
+        	<p>Es gelten unsere <a target="_blank" href="https://treff.top/nutzungsbedingungen/">Nutzungsbedingungen</a>.</p>
+            </div>
             <% if Rails.configuration.terms %>
               <div class="form-inline">
                 <label class="custom-switch">

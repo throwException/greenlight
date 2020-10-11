@@ -16,16 +16,28 @@
 <div class="background">
   <div class="container pt-9 pb-8">
     <div class="row">
-      <div class="col-md-12 col-sm-12 text-center">
-        <h1 id="main-text" class="display-4 mb-4"> <%= t("landing.welcome").html_safe %></h1>
-        <p class="lead offset-lg-2 col-lg-8 col-sm-12 "><%= t("landing.about", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank", rel: "noopener")).html_safe %></p>
-        <%= link_to "https://youtu.be/Hso8yLzkqj8", target: "_blank" do %>
-          <h4><%= t("landing.video") %> <i class="far fa-play-circle ml-1"></i></h4>
-        <% end %>
+      <div class="col-md-12 col-sm-12">
+	<div class="text-center">
+        <h1 id="main-text" class="display-4 mb-4">Willkommen bei treff.top</h1>
+	</div>
+        <p>Diesen digitalen Treffpunkt können alle Menschen als virtuelle Kantine, für den abendlichen Stammtisch oder zum Austausch mit Verwandten und Freunden nutzen.</p>
+        <p>Wir bitten folgendes zu beachten:</p>
+        <ul>
+          <li>Alle Menschen sind willkommen</li>
+          <li>Die Services sind gratis verfügbar für alle nicht-kommerziellen Aktivitäten</li>
+          <li>Die Unterstützung durch unsere Freiwilligen ist beschränkt</li>
+          <li>Geht anständig und respektvoll miteinander um</li>
+          <li>Keine Aufzeichnungen des Sprachchats (Mumble)</li>
+        </ul>
+        <p>Bitte die <a target="_blank" href="https://treff.top/nutzungsbedingungen/">Nutzungsbedingungen</a> lesen.</p>
+        <p>Administratoren:</p>
+        <ul>
+          <li>Exception (Stefan Thöni)</li>
+          <li>Atropos</li>
+        </ul>
+	<p>Dieses Angebot wird von der <a target="_blank" href="https://parat.swiss">PARAT</a> zur Verfügung gestellt</p>
       </div>
-
     </div>
   </div>
 </div>
 
-<%= render "main/components/features" %>
